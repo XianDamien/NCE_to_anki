@@ -9,11 +9,12 @@ from dotenv import load_dotenv
 # --- 配置 ---
 load_dotenv() 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-BOOK_TO_PROCESS = 2
+BOOK_TO_PROCESS = 3
 RAW_DATA_DIR = os.path.join("raw_data", f"nce_book_{BOOK_TO_PROCESS}")
 PROCESSED_DATA_DIR = os.path.join("processed_data", f"nce_book_{BOOK_TO_PROCESS}")
-
+MODEL_NAME = "gemini-2.5-flash"
 GENERATION_CONFIG = {"temperature": 0.4, "top_p": 1, "top_k": 1, "max_output_tokens": 8000}
+
 # ------------
 safety_settings = {
     HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
@@ -58,7 +59,7 @@ prompt_for_refinement = (
     "1. **精炼简洁**: 严格遵守“少即是多”，删除草稿中所有非必要的、重复的或过于基础的信息。最终笔记要简明扼要，不要给初学者造成负担。\n"
     "2. **深度关联**: 这是你的核心价值。请仔细阅读下面提供的“本课所有其他句子的笔记草稿”，如果当前句子的知识点（词汇/句型）与它们有关联，请用“这和我们之前遇到的...类似”或“注意区分...”等方式点明，帮助学生建立联系。\n"
     "3. **优化表达**: 用更生动、更易于理解的方式重写草稿，确保最终版本清晰、流畅。\n\n"
-    "输出格式：纯文本，用数字前缀分点。绝对不要使用markdown格式！！！！！也不要使用\n的格式！！！！！注意精炼之后每一句的字数不能超过100字！！！！关联开始的时候只需要标注【关联点】即可\n"
+    "输出格式：纯文本，用数字前缀分点。绝对不要使用markdown格式！！！！！也不要使用\n的格式！！！！！注意精炼之后每一个句子卡片的解析的字数不能超过100字！！！！关联开始的时候只需要标注【关联点】即可\n"
     "------------------------------------------------------------------\n"
     "当前要精炼的句子:\n"
     "- 英文: \"{eng}\"\n"
@@ -76,10 +77,7 @@ prompt_for_refinement = (
 
 
 def process_lesson_with_gemini(lesson_data):
-    print("🤖 开始使用Gemini处理内容(两阶段精炼模式)...")
-    model = genai.GenerativeModel(model_name="gemini-2.5-flash", generation_config=GENERATION_CONFIG)
-    
-    # --- 准备阶段: 智能分句 ---
+    model = genai.GenerativeModel(model_name=MODEL_NAME, generation_config=GENERATION_CONFIG, safety_settings=safety_settings)
     prompt_split = f"你的任务是将一段英文和其对应的中文翻译，一句对一句地精准配对。请严格按照“英文句子 | 中文句子”的格式输出...\n\n现在请处理以下内容：\n英文课文:\n{lesson_data['english']}\n\n中文译文:\n{lesson_data['chinese']}"
     try:
         response = model.generate_content(prompt_split)
