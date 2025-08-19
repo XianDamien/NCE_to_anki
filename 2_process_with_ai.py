@@ -5,15 +5,23 @@ import json
 import os
 import time
 from dotenv import load_dotenv
+import concurrent.futures
 
 # --- 配置 ---
 load_dotenv() 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-BOOK_TO_PROCESS = 3
+
+MAX_PROCESS_WORKERS = 5 
+MAX_THREAD_WORKERS_FOR_DRAFTS = 10
+MAX_RETRIES_PER_SENTENCE = 3
+
+BOOK_TO_PROCESS = 2
 RAW_DATA_DIR = os.path.join("raw_data", f"nce_book_{BOOK_TO_PROCESS}")
 PROCESSED_DATA_DIR = os.path.join("processed_data", f"nce_book_{BOOK_TO_PROCESS}")
-MODEL_NAME = "gemini-2.5-flash"
-GENERATION_CONFIG = {"temperature": 0.4, "top_p": 1, "top_k": 1, "max_output_tokens": 8000}
+
+GENERATION_CONFIG = {"temperature": 0.4, "top_p": 1, "top_k": 1, "max_output_tokens": 8192}
+FLASH_MODEL_NAME = "gemini-2.5-flash"
+PRO_MODEL_NAME = "gemini-2.5-pro"
 
 # ------------
 safety_settings = {
@@ -68,119 +76,140 @@ prompt_for_refinement = (
     "--- 草稿开始 ---\n"
     "{draft_note}\n"
     "--- 草稿结束 ---\n\n"
-    "【重要参考】本课所有其他句子的笔记草稿（供你寻找关联点）:\n"
+    "【参考1】本课所有内容的草稿 (供你通览全局，寻找远距离关联):\n"
+    "{full_context}\n\n"
+    "【参考2】本课已按顺序精炼过的笔记 (供你回顾近期内容，避免重复):\n"
+    "{refined_context}\n"
+    "--------------------------------\n"
     "--- 全文背景开始 ---\n"
     "{full_context}\n"
     "--- 全文背景结束 ---\n\n"
+    "--- 已精炼笔记开始 ---\n"
+    "{refined_context}\n"
+    "--- 已精炼笔记结束 ---\n\n"
     "现在，请输出你对上面那份“笔记草稿”进行精炼和关联后的最终版本:输出示例：【核心词汇】 **have (vt.)**: “拥有，有”。这是英语中最基础的动词之一，表示所属关系。 【关联点】: 在本课中，我们还会遇到表示“属于”的 `belong to`。`have` 强调主动拥有，如 `We have an instrument.` (我们拥有一件乐器)。而 `It has belonged to our family for a long time.` (它属于我们家很久了) 则强调被动地“属于”某个群体或个人，并持续了一段时间。注意它们在表达“所属”时的不同侧重【句型解析】：主谓宾 (S + V + O)    `We` (主语 S) + `have` (谓语 V) + `an old musical instrument` (宾语 O)。 这是一个典型的“主谓宾”句型，直接说明“谁拥有什么”。`old` 和 `musical` 是形容词，它们修饰名词 `instrument`，具体描述了乐器的特征。【举一反三】：I have a new car. (我有一辆新车。) She has a big house. (她有一栋大房子。)\n"
 )
 
 
 def process_lesson_with_gemini(lesson_data):
-    model = genai.GenerativeModel(model_name=MODEL_NAME, generation_config=GENERATION_CONFIG, safety_settings=safety_settings)
-    prompt_split = f"你的任务是将一段英文和其对应的中文翻译，一句对一句地精准配对。请严格按照“英文句子 | 中文句子”的格式输出...\n\n现在请处理以下内容：\n英文课文:\n{lesson_data['english']}\n\n中文译文:\n{lesson_data['chinese']}"
+    flash_model = genai.GenerativeModel(model_name=FLASH_MODEL_NAME, generation_config=GENERATION_CONFIG, safety_settings=safety_settings)
+    pro_model = genai.GenerativeModel(model_name=PRO_MODEL_NAME, generation_config=GENERATION_CONFIG, safety_settings=safety_settings)
+    
+    # ... 分句逻辑 ...
+    prompt_split = f"你的任务是将一段英文和其对应的中文翻译，一句对一句地精准配对。请严格按照“英文句子 | 中文句子”的格式输出...\n\n英文课文:\n{lesson_data['english']}\n\n中文译文:\n{lesson_data['chinese']}"
     try:
-        response = model.generate_content(prompt_split)
-        sentence_pairs = []
-        for line in response.text.strip().split('\n'):
-            if '|' in line:
-                parts = line.split('|', 1)
-                if len(parts) == 2:
-                    sentence_pairs.append((parts[0].strip(), parts[1].strip()))
-        print(f"   - ✅ 智能分句完成，共 {len(sentence_pairs)} 句。")
+        response = flash_model.generate_content(prompt_split)
+        if not response.parts: raise ValueError(f"分句API响应为空, 原因: {response.candidates[0].finish_reason}")
+        sentence_pairs = [(p[0].strip(), p[1].strip()) for line in response.text.strip().split('\n') if '|' in line and len(p := line.split('|', 1)) == 2]
     except Exception as e:
-        print(f"\n   - ❌ 调用Gemini分句时出错: {e}"); return None
+        print(f"   - ❌ 调用Gemini分句出错，已中止: {e}"); return None
     if not sentence_pairs:
         print("   - ⚠️ 未能成功配对句子，处理中断。"); return None
 
-    # --- 阶段1: 生成所有句子的笔记草稿 ---
-    print("\n--- [阶段1: 正在生成草稿笔记，此阶段成本较低] ---")
+    # --- 阶段1: 并行生成草稿 ---
+    print(f"   - ✅ 智能分句完成，共 {len(sentence_pairs)} 句。开始并行生成草稿...")
     draft_notes = {}
-    for i, (eng, chn) in enumerate(sentence_pairs):
-        print(f"  - 正在为第 {i+1}/{len(sentence_pairs)} 句生成草稿...")
+    def generate_single_draft(sentence_pair):
+        eng, chn = sentence_pair
         try:
-            # <<< 修正：在这里使用.format()方法，并提供所有需要的变量 >>>
-            draft_prompt_filled = prompt_for_draft.format(
-                eng=eng, 
-                chn=chn, 
-                vocabulary=lesson_data.get('vocabulary', '') # 使用.get以防万一没有'vocabulary'键
-            )
-            response = model.generate_content(draft_prompt_filled)
-            draft_notes[eng] = response.text.strip()
+            draft_prompt_filled = prompt_for_draft.format(eng=eng, chn=chn, vocabulary=lesson_data.get('vocabulary', ''))
+            response = flash_model.generate_content(draft_prompt_filled)
+            if not response.parts: raise ValueError(f"API响应为空, 原因: {response.candidates[0].finish_reason}")
+            return eng, response.text.strip()
         except Exception as e:
-            print(f"  - ❌ 生成草稿失败: {e}")
-            draft_notes[eng] = "草稿生成失败。"
-        time.sleep(1)
-    print("--- [阶段1: 所有草稿生成完毕] ---")
+            return eng, "草稿生成失败。"
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_THREAD_WORKERS_FOR_DRAFTS) as executor:
+        results = executor.map(generate_single_draft, sentence_pairs)
+        for eng, draft_note in results:
+            draft_notes[eng] = draft_note
 
-    # --- 阶段2: 精炼并关联笔记 ---
-    print("\n--- [阶段2: 正在精炼并关联笔记，此阶段更智能] ---")
+    # --- 阶段2: 串行精炼笔记 (使用双重上下文) ---
+    print("   - ✅ 所有草稿生成完毕。开始使用Pro模型进行双重上下文精炼...")
     final_notes_data = []
     for i, (eng, chn) in enumerate(sentence_pairs):
-        print(f"  - 正在精炼第 {i+1}/{len(sentence_pairs)} 句的笔记...")
-        
-        draft_note_for_current_sentence = draft_notes.get(eng, "")
-        
-        # 构建用于参考的“全文背景”
-        other_drafts = []
-        for other_eng, other_note in draft_notes.items():
-            if other_eng != eng:
-                other_drafts.append(f"句子: {other_eng}\n笔记草稿: {other_note}\n")
-        full_context = "\n".join(other_drafts)
+        final_note = None
+        for attempt in range(MAX_RETRIES_PER_SENTENCE):
+            try:
+                print(f"  - 正在精炼第 {i+1}/{len(sentence_pairs)} 句 (Pro模型, 尝试 {attempt + 1}/{MAX_RETRIES_PER_SENTENCE})...")
+                draft_note = draft_notes.get(eng, "")
+                
+                # <<< 核心改动：同时构建两种上下文 >>>
+                # 上下文1: 全文草稿 (用于全局视野)
+                other_drafts = [f"- {o_eng}\n  草稿: {o_note}" for o_eng, o_note in draft_notes.items() if o_eng != eng]
+                full_context = "\n".join(other_drafts)
 
-        # 填充最终的精炼Prompt
-        refinement_prompt_filled = prompt_for_refinement.format(
-            eng=eng,
-            chn=chn,
-            draft_note=draft_note_for_current_sentence,
-            full_context=full_context
-        )
+                # 上下文2: 已精炼笔记 (用于滚动记忆)
+                if not final_notes_data:
+                    refined_context = "（这是本课第一句，尚无已精炼的笔记）"
+                else:
+                    context_lines = [f"- {item['english']}\n  最终笔记: {item['note']}" for item in final_notes_data]
+                    refined_context = "\n".join(context_lines)
+
+                # 将两种上下文都填充到Prompt中
+                refinement_prompt_filled = prompt_for_refinement.format(
+                    eng=eng, chn=chn, draft_note=draft_note, 
+                    full_context=full_context, 
+                    refined_context=refined_context
+                )
+                
+                response = pro_model.generate_content(refinement_prompt_filled, request_options={"timeout": 300})
+                if not response.parts: raise ValueError(f"API响应为空, 原因: {response.candidates[0].finish_reason}")
+                
+                final_note = response.text.strip()
+                break
+            except Exception as e:
+                print(f"    - ⚠️ 精炼尝试失败: {e}")
+                if attempt < MAX_RETRIES_PER_SENTENCE - 1:
+                    print("    - 正在等待5秒后重试..."); time.sleep(5)
+                else:
+                    print(f"    - ❌ 已达最大重试次数，精炼失败。")
         
-        try:
-            response = model.generate_content(refinement_prompt_filled, request_options={"timeout": 180})
-            final_note = response.text.strip()
+        if final_note is not None:
             final_notes_data.append({"english": eng, "chinese": chn, "note": final_note})
-        except Exception as e:
-            print(f"  - ❌ 精炼笔记失败: {e}")
-            # 即使精炼失败，也保留草稿作为备用
-            final_notes_data.append({"english": eng, "chinese": chn, "note": f"精炼失败，保留草稿：\n{draft_note_for_current_sentence}"})
+        else:
+            print(f"   - ❌ 由于句子“{eng[:20]}...”精炼失败，本课({lesson_data['filename']})处理中止。")
+            return None
+        
         time.sleep(1)
-    print("--- [阶段2: 所有笔记精炼完毕] ---")
-    
-    print("\n✅ 整篇课文处理完成。")
+
+    print(f"   - ✅ 整篇课文({lesson_data['filename']})所有句子精炼成功！")
     return final_notes_data
 
+# ... process_single_file 和 main 函数保持不变 ...
+def process_single_file(filename):
+    if GOOGLE_API_KEY:
+        genai.configure(api_key=GOOGLE_API_KEY)
+    else:
+        return f"❌ 错误：子进程无法找到GOOGLE_API_KEY。"
+    raw_filepath = os.path.join(RAW_DATA_DIR, filename)
+    processed_filepath = os.path.join(PROCESSED_DATA_DIR, filename)
+    if os.path.exists(processed_filepath):
+        return f"🟡 {filename} 已成功处理，跳过。"
+    print(f"🚀 开始处理文件: {filename}")
+    with open(raw_filepath, 'r', encoding='utf-8') as f:
+        lesson_data = json.load(f)
+    lesson_data['filename'] = filename 
+    anki_notes = process_lesson_with_gemini(lesson_data)
+    if anki_notes:
+        with open(processed_filepath, 'w', encoding='utf-8') as f:
+            json.dump(anki_notes, f, ensure_ascii=False, indent=4)
+        return f"✅ 文件 {filename} 处理成功，已保存。"
+    else:
+        return f"❌ 文件 {filename} 处理失败，将在下次运行时重试。"
 
 def main():
-    print("🚀 脚本2：使用Gemini API处理原始数据 🚀")
-    if "YOUR_NEW_GOOGLE_API_KEY" in GOOGLE_API_KEY:
-        print("❌ 错误：请在脚本中填入您新生成的Google API密钥！")
-        return
-    try:
-        genai.configure(api_key=GOOGLE_API_KEY)
-    except Exception as e:
-        print(f"❌ 初始化Gemini失败: {e}"); return
+    print(f"🚀 脚本2：并行处理启动 (使用 {MAX_PROCESS_WORKERS} 个进程) 🚀")
+    if not GOOGLE_API_KEY:
+        print("❌ 错误：未在.env文件中找到GOOGLE_API_KEY。"); return
     os.makedirs(PROCESSED_DATA_DIR, exist_ok=True)
-    raw_files = sorted([f for f in os.listdir(RAW_DATA_DIR) if f.endswith('.json')])
-    for filename in raw_files:
-        raw_filepath = os.path.join(RAW_DATA_DIR, filename)
-        processed_filepath = os.path.join(PROCESSED_DATA_DIR, filename)
-        if os.path.exists(processed_filepath):
-            print(f"🟡 {filename} 已处理过，跳过。")
-            continue
-        print("\n" + "="*50)
-        print(f"📄 正在处理文件: {filename}")
-        with open(raw_filepath, 'r', encoding='utf-8') as f:
-            lesson_data = json.load(f)
-        if not lesson_data.get('english') or not lesson_data.get('chinese'):
-            print("   - ❌ 文件内容不完整，跳过。"); continue
-        anki_notes = process_lesson_with_gemini(lesson_data)
-        if anki_notes:
-            with open(processed_filepath, 'w', encoding='utf-8') as f:
-                json.dump(anki_notes, f, ensure_ascii=False, indent=4)
-            print(f"💾 已将处理结果保存到: {processed_filepath}")
-    print("\n🏁 所有原始数据处理完毕！")
-
+    raw_files = sorted([f for f in os.listdir(RAW_DATA_DIR) if f.endswith('.json') and not f.startswith('.')])
+    if not raw_files:
+        print("🟡 在raw_data文件夹中没有找到要处理的文件。"); return
+    with concurrent.futures.ProcessPoolExecutor(max_workers=MAX_PROCESS_WORKERS) as executor:
+        results = executor.map(process_single_file, raw_files)
+        for result in results:
+            print(result)
+    print("\n🏁 所有文件处理完毕！请检查日志中是否有处理失败的文件。")
 
 if __name__ == '__main__':
     main()
