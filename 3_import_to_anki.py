@@ -11,15 +11,15 @@ from google.oauth2 import service_account
 # --- 配置 ---
 load_dotenv()
 GOOGLE_KEY_FILE_PATH = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
-BOOK_TO_IMPORT = 2
-ANKI_DECK_NAME = "新概念英语2"
+BOOK_TO_IMPORT = 3
+ANKI_DECK_NAME = "新概念英语3"
 ANKI_MODEL_NAME = "背课文"
 ANKI_AUDIO_FIELD_NAME = "发音"
 ANKI_CONNECT_URL = "http://127.0.0.1:8765"
 PROCESSED_DIR = os.path.join("processed_data", f"nce_book_{BOOK_TO_IMPORT}")
 IMPORTED_DIR = os.path.join(PROCESSED_DIR, "imported")
-TTS_LANGUAGE_CODE = "en-US"
-TTS_VOICE_NAME = "en-US-Standard-J"
+TTS_LANGUAGE_CODE = "en-GB"
+TTS_VOICE_NAME = "en-GB-Neural2-C"
 # ------------
 
 def ankiconnect_invoke(action, **params):

@@ -15,7 +15,7 @@ MAX_PROCESS_WORKERS = 5
 MAX_THREAD_WORKERS_FOR_DRAFTS = 10
 MAX_RETRIES_PER_SENTENCE = 3
 
-BOOK_TO_PROCESS = 2
+BOOK_TO_PROCESS = 3
 RAW_DATA_DIR = os.path.join("raw_data", f"nce_book_{BOOK_TO_PROCESS}")
 PROCESSED_DATA_DIR = os.path.join("processed_data", f"nce_book_{BOOK_TO_PROCESS}")
 
@@ -101,6 +101,7 @@ def process_lesson_with_gemini(lesson_data):
         response = flash_model.generate_content(prompt_split)
         if not response.parts: raise ValueError(f"分句API响应为空, 原因: {response.candidates[0].finish_reason}")
         sentence_pairs = [(p[0].strip(), p[1].strip()) for line in response.text.strip().split('\n') if '|' in line and len(p := line.split('|', 1)) == 2]
+    
     except Exception as e:
         print(f"   - ❌ 调用Gemini分句出错，已中止: {e}"); return None
     if not sentence_pairs:
