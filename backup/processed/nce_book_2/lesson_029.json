@@ -1,0 +1,42 @@
+[
+    {
+        "english": "Captain Ben Fawcett has bought an unusual taxi and has begun a new service.",
+        "chinese": "本.弗西特机长买了一辆不同寻常的出租汽车，并开始了一项新的业务。",
+        "note": "1. 核心时态是现在完成时(has bought/begun)，表示已完成且与现在相关的动作。and连接了两个并列的动作，第二个动作省略了主语，使表达更流畅。\n\n2. 【关联点】这是我们第一次遇到现在完成时。注意，后文描述机长至今的经历时，如“has flown passengers”和“has just refused”，都沿用了这个时态。"
+    },
+    {
+        "english": "The 'taxi' is a small Swiss aeroplane called a 'Pilatus Porter'. This wonderful plane can carry seven passengers.",
+        "chinese": "这辆“出租汽车”是一架小型瑞士飞机，叫“皮勒特斯.波特“Pilatus Porter号，这架奇妙的飞机可以载7名乘客。",
+        "note": "1. 核心结构是“下定义”和“说能力”。`called a 'Pilatus Porter'`是过去分词作后置定语，为飞机命名。`can carry`则说明其运载能力。\n\n2. 【关联点】`called...`这种修饰方法，和我们后面遇到的定语从句`a doctor who flew...`作用类似，都是为名词提供额外信息。注意`passengers`一词是本文的核心词汇。"
+    },
+    {
+        "english": "The most surprising thing about it, however, is that it can land anywhere: on snow, water, or even on a ploughed field.",
+        "chinese": "然而，最令人惊奇的是它能够在任何地方降落：雪地上，水面上，甚至刚耕过的田里。",
+        "note": "1. 这是一个强调重点的句型：“The most + 形容词 + thing is that...”，用一个完整的句子来解释“最...的事是什么”。however是转折词，冒号则引出anywhere的具体例子。\n\n2. 【关联点】这里的can land（能降落）描述飞机的能力，这和我们后面遇到的landed（降落了）描述一次具体过去的动作形成对比。注意ploughed是动词plough的过去分词作形容词，表示“被耕过的”。"
+    },
+    {
+        "english": "Captain Fawcett's first passenger was a doctor who flew from Birmingham to a lonely village in the Welsh mountains.",
+        "chinese": "弗西特机长的第一名乘客是位医生， 他从伯明翰飞往威尔士山区一个偏僻的村庄。",
+        "note": "1. 核心结构是“主句+定语从句”。`who flew...`这个从句就像一个长长的形容词，用来修饰前面的`a doctor`。词汇上，`flew`是`fly`的过去式，表示一次飞行动作；`lonely`在此处意为“偏僻的”。\n\n2. 【关联点】`who`引导的定语从句，和我们之前遇到的`...called a 'Pilatus Porter'`作用类似，都是修饰名词。注意区分`flew`（一次过去的动作）和`has flown`（持续到现在的经历）的时态差异。`lonely`（偏僻的）的用法也与后文的`a lonely island`一致。"
+    },
+    {
+        "english": "Since then, Captain Fawcett has flown passengers to many unusual places.",
+        "chinese": "从那时开始， 弗西特机长已经载送乘客到过许多不寻常的地方。",
+        "note": "1. 核心是“Since then + 现在完成时”，表示从过去某时点至今的持续经历。has flown是fly的过去分词，此处意为“已载送”，强调动作的完成和经验的累积。\n\n2. 【关联点】这延续了开篇的现在完成时（has bought），总结至今的经历。注意区分has flown（至今的经历）和我们之前遇到的flew（一次过去的飞行）。unusual一词也曾在首句出现。"
+    },
+    {
+        "english": "Once he landed on the roof of a block of flats and on another occasion, he landed in a deserted car park.",
+        "chinese": "一次，他把飞机降落在了一栋公寓楼的屋顶上； 还有一次，降落在了一个废弃的停车场上。",
+        "note": "1. 核心句型是“Once..., and on another occasion...”，用于列举两个并列的过去事件。landed是一般过去时，表示一次具体的降落动作。deserted意为“废弃的”，由动词desert变化而来。\n\n2. 【关联点】注意区分这里的landed（已降落）和之前遇到的can land（能降落），前者是具体动作，后者是能力。deserted（废弃的）和ploughed（被耕过的）用法类似，都是动词过去分词作形容词，其“荒凉感”也与lonely（偏僻的）相呼应。"
+    },
+    {
+        "english": "Captain Fawcett has just refused a strange request from a businessman.",
+        "chinese": "弗西特机长刚刚拒绝了一位商人的奇怪要求。",
+        "note": "1. 核心是现在完成时`has just refused`，用副词`just`强调动作刚刚发生。`refuse a request`意为“拒绝一个要求”，是核心动宾搭配。`from a businessman`则补充说明了请求的来源。\n\n2. 【关联点】这延续了开篇的现在完成时(has bought)，但用just强调“刚刚”。注意区分它和之前遇到的did not take(过去未做)。此外，这个strange request与那位想去危险孤岛的男士(The man wanted to fly...)形成呼应。"
+    },
+    {
+        "english": "The man wanted to fly to Rockall, a lonely island in the Atlantic Ocean, but Captain Fawcett did not take him because the trip was too dangerous.",
+        "chinese": "这个人想要飞往大西洋上的一个孤岛 -- 罗卡尔岛，弗西特机长之所以不送他去，是因为那段飞行太危险了。",
+        "note": "1. 核心结构是“愿望(wanted to...) + but + 拒绝 + because + 原因”。`take him`意为“送他去”，`lonely`再次意为“偏僻的”。`, a lonely island...`是补充说明Rockall的同位语结构。\n\n2. 【关联点】这正是前句所说`strange request`的实例。注意区分`did not take`(过去未做)和`has just refused`(刚刚拒绝)。`lonely`的用法与`lonely village`一致。`take`在此处“运送”的含义也与`carry`类似。"
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "english": "After breakfast, I sent the children to school and then I went to the shops.",
+        "chinese": "早饭后，我送孩子们上学，然后就去了商店。",
+        "note": "1. 这是一个典型的叙事句，结构为“时间, 动作1, and then 动作2”，清晰地描述了事件的先后顺序。两个动词 sent 和 went 都是过去式，表明事情已经发生。\n\n2. 【关联点】这里的 to school 和 to the shops 都表示目的地。注意区分我们之前遇到的 return home，其中 home 作副词，前面不加 to。此外，动词 sent (send) 和 went (go) 是不规则过去式，这和之后遇到的 rang (ring) 类似，需要特别记忆。"
+    },
+    {
+        "english": "It was still early when I returned home.",
+        "chinese": "我回到家时，时间还早。",
+        "note": "1. 这是一个主从复合句，用 when 连接两个过去的事件。主句 It was still early 描述状态，从句 I returned home 提供时间背景。句首的 It 用来指代时间，没有实际意义。\n\n2. 【关联点】注意 return home 的用法。这里的 home 是副词，前面不加 to。这和我们之前遇到的 go to the shops 不同，那里的 shops 是名词，需要介词 to。\n\n3. 【关联点】这里的 It 指代时间。注意区分之后遇到的 It took me ten minutes...，那里的 It 指代的是后面 to do 的那件事。"
+    },
+    {
+        "english": "The children were at school, my husband was at work and the house was quiet.",
+        "chinese": "孩子们在上学，我丈夫在上班，家里清静得很。",
+        "note": "1. 这是一个并列句，用 and 连接了三个描述过去同时发生的状态的小分句。它们都遵循“主语 + be动词 + 表语”的结构，简洁地描绘了一个完整的场景。\n\n2. 【关联点】这里的 at school 表示“在学校”这一地点或状态。注意区分我们之前遇到的 send the children to school，其中的 to school 强调“去学校”这个方向和目的地。"
+    },
+    {
+        "english": "So I decided to make some meat pies.",
+        "chinese": "于是我决定做些肉馅饼。",
+        "note": "1. 核心句型是 decide to do sth. (决定做某事)。这里的 to make some meat pies 是一个整体，作为 decided 的宾语，回答了“决定了什么？”这个问题。\n\n2. 【关联点】这里的 decide to do sth. 和我们之后遇到的 persuade sb to do sth. (说服某人做某事) 属于同一类用法。这类动词后面常常跟不定式 to do，来表示目的或内容。"
+    },
+    {
+        "english": "In a short time I was busy mixing butter and flour and my hands were soon covered with sticky pastry.",
+        "chinese": "不一会儿我就忙着调拌起了黄油和面粉，很快我的手上就沾满了粘粘的面糊。",
+        "note": "1. 这个句子用 and 连接了两个描述过去状态的分句。请掌握两个核心用法：be busy doing sth. (忙于做某事)，表示正在进行的活动；be covered with sth. (被...覆盖)，描述一个结果状态。这里的 sticky (粘的) 生动地形容了 pastry (面糊)。\n\n2. 【关联点】句中用 be + 形容词/过去分词 (was busy, were covered) 来描述状态，这和我们遇到的 the house was quiet 以及 was dismayed 的用法完全相同。同时，核心词 sticky 和 pastry 在后面的 sticky fingers 和 There was pastry... 中会再次出现，前后呼应。"
+    },
+    {
+        "english": "At exactly that moment, the telephone rang.",
+        "chinese": "恰恰在此时，电话铃响了。",
+        "note": "1. 这是一个简单的主谓(S+V)句型。句首的时间状语 At exactly that moment (恰恰在那一刻) 被提前，用以强调事件发生的突然性。核心动作是 the telephone rang (电话响了)。\n\n2. 【关联点】动词 rang 是 ring 的不规则过去式。这和我们之前遇到的 sent (send) 和 went (go) 属于同一类，需要特别记忆。\n\n3. 【关联点】这里的 rang (响了) 和之后遇到的 doorbell rang (门铃响了) 用法相同。注意区分动词原形 ring，它在 persuade her to ring back (让她回电话) 中出现。"
+    },
+    {
+        "english": "Nothing could have been more annoying.",
+        "chinese": "没有什么能比这更烦人了。",
+        "note": "1. 这是一个经典的否定形式表达最高级含义的句型。句式“Nothing could have been more + 形容词”通过字面上的“不可能有更...的了”，来强烈地表达“这真是最...的了”这一含义。\n\n2. 【关联点】这是一种强烈的情绪表达方式，和我们之后遇到的感叹句 What a mess! (真是乱七八糟!) 作用类似。同时，annoying (烦人的) 这个词也呼应了之前打电话时 I was dismayed (我很沮丧) 的心情。"
+    },
+    {
+        "english": "I picked up the receiver between two sticky fingers and was dismayed when I recognized the voice of Helen Bates.",
+        "chinese": "我用两个沾满面糊的手指捏起了话筒。当听出是海伦.贝茨的声音时，非常丧气。",
+        "note": "1. 本句用 and 连接两个动作，并用 when 从句解释了“我”感到沮丧(dismayed)的原因。核心词：pick up (拿起)，recognize (认出)。\n\n2. 【关联点】when 从句用法和我们遇到的 It was still early when... 相同。was dismayed 这种表状态的用法，也和 were covered, the house was quiet 一致。sticky 一词则呼应了之前的 sticky pastry。"
+    },
+    {
+        "english": "It took me ten minutes to persuade her to ring back later.",
+        "chinese": "我用了10分钟的时间才说服她过会儿再来电话。",
+        "note": "1. 核心句型是 It took sb time to do sth.，意为“做某事花费了某人多少时间”。这里的 It 是形式主语，真正的主语是后面的 to persuade... 这件事。\n\n2. 句中还包含一个重要用法：persuade sb to do sth. (说服某人做某事)。【关联点】这和我们遇到的 decide to do sth. 以及之后会学到的 want sb to do sth. 类似，都是动词后跟不定式 to do。\n\n3. 动词短语 ring back 意为“回电话”。【关联点】注意这里的 ring 是动词原形，而之前遇到的 the telephone rang 中的 rang 是它的过去式。took 也是不规则过去式，和 sent, went, rang 一样。\n\n4. 【关联点】注意区分 It 的用法。在这里，It 指代后面 to persuade... 这件事。而在 It was still early... 中，It 指代的是“时间”。"
+    },
+    {
+        "english": "At last I hung up the receiver.",
+        "chinese": "我终于挂上了话筒。",
+        "note": "1. 核心短语 hang up (挂断电话)，过去式为 hung up。句首的 At last (终于) 强调了经过漫长等待或努力后的结果，表达了一种解脱感。\n\n2. 【关联点】动词短语 hung up (挂断) 和我们之前遇到的 picked up (拿起) 是一对反义词。同时，hung 是不规则过去式，这和我们学过的 sent, went, rang, took 属于同一类。"
+    },
+    {
+        "english": "What a mess!",
+        "chinese": "真是糟糕透了！",
+        "note": "1. 核心句型是 What a + 名词!，一种省略了主谓的强力感叹句，用于表达惊讶、赞美或此处的沮丧。核心词 mess 指“乱七八糟的状况”。\n\n2. 【关联点】这是一种直接的情绪表达。它和我们之前遇到的 'Nothing could have been more annoying.' 作用类似，都是抒发强烈感受，但句式更口语化。\n\n3. 【关联点】这句话是对之前 'There was pastry on my fingers, on the telephone, and on the doorknobs.' 所描述场景的直接反应和总结，点明了故事的小高潮。"
+    },
+    {
+        "english": "There was pastry on my fingers, on the telephone, and on the doorknobs.",
+        "chinese": "我的手指上、电话机上以及门的把手上，都沾上了面糊。",
+        "note": "1. 核心句型是 There was + 名词 + 地点状语，用于描述“某处有某物”。本句用三个并列的 on... 短语，生动描绘了面糊(pastry)到处都是的混乱场面。\n\n2. 【关联点】这幅混乱的画面正是下一句感叹 What a mess! 的原因。同时，词汇 pastry 和 fingers 也与之前遇到的 sticky pastry 和 sticky fingers 相互呼应，增强了故事的连贯性。"
+    },
+    {
+        "english": "I had no sooner got back to the kitchen than the doorbell rang loud enough to wake the dead.",
+        "chinese": "我刚回到厨房，门铃又响了起来，响声足以把死人唤醒。",
+        "note": "1. 核心句型是 no sooner... than... (一...就...)，强调两个动作紧接着发生。no sooner 所在的分句常用过去完成时(had done)，表示这个动作发生在 than 分句的动作之前。\n\n2. 短语 ...enough to do sth. 表示“足够...去做某事”。这里的 loud enough to wake the dead 是一种夸张说法，生动地形容门铃声极大。\n\n3. 【关联点】注意 no sooner 后的动词是过去完成时 had got，而 than 之后是过去时 rang。这和我们之前遇到的 the telephone rang 用法一致，都是不规则动词 ring 的过去式。\n\n4. 【关联点】这里的夸张手法 to wake the dead，和我们之前遇到的 Nothing could have been more annoying. 以及 What a mess! 类似，都是用来增强叙事的情感色彩和生动性的方式。"
+    },
+    {
+        "english": "This time it was the postman and he wanted me to sign for a registered letter!",
+        "chinese": "这次是邮递员，他要我签收一封挂号信！",
+        "note": "1. 本句用 and 连接两个分句。核心句型是 want sb to do sth. (想让某人做某事)，用来表达请求或意图。核心短语：sign for (签收)。\n\n2. 【关联点】句型 want sb to do sth. 和我们之前遇到的 persuade sb to do sth. (说服某人做某事) 以及 decide to do sth. (决定做某事) 属于同一类用法，都是动词后跟不定式 to do 来表达意图或内容。"
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "english": "In 1963 a Lancaster bomber crashed on Wallis Island, a remote place in the South Pacific, a long way west of Samoa.",
+        "chinese": "1963年，一架兰开斯特轰炸机在瓦立斯岛毁。那是南太洋中一个很偏僻的小岛，位于萨摩亚群岛以西，距离群岛还有很长一段距离。",
+        "note": "1. 句子核心是“a bomber crashed (坠毁)”。逗号后是同位语，像补充标签一样解释了 Wallis Island 是个偏远之地。\n2. 【关联点】注意 crash 在此为动词，之后会变为名词指“坠毁事故”，如 the crash was forgotten。"
+    },
+    {
+        "english": "The plane wasn't too badly damaged, but over the years, the crash was forgotten and the wreck remained undisturbed.",
+        "chinese": "飞机损坏的程度并不严重，但是，多年来这起飞机失事已被遗忘， 飞机残骸也没受到破坏。",
+        "note": "1. 句子由 but 和 and 连接，描述了“损坏不重”与“被遗忘”的转折，以及之后“残骸未受扰动”的状态。\n2. 核心动词是 was 和 remained，都用于描述一种持续的状态，前者是被动的“被遗忘”，后者是主动的“保持原样”。\n3. 【关联点】这里的 the crash (坠毁事故) 是名词。这和我们之前遇到的 a bomber crashed (动词，坠毁) 形成词性活用对比。\n4. 【关联点】damaged, forgotten, undisturbed 都是过去分词，表“被...”的状态。这与后文的 was rediscovered, packaged, restored, rebuilt, preserved 属于同一用法，贯穿全文。"
+    },
+    {
+        "english": "Then in 1989, twenty-six years after the crash, the plane was accidentally rediscovered in an aerial survey of the island.",
+        "chinese": "于是，到了1989年，飞机失事26年后， 在对小岛的一次航空勘查中那架飞机被意外地发现了。",
+        "note": "1. 核心结构是被动语态 `the plane was rediscovered` (被重新发现)，强调飞机是动作的承受者。`accidentally` (意外地) 和 `in an aerial survey` (在航空勘查中) 分别点明了发现的方式和途径。\n\n2. 【关联点】`was rediscovered` 延续了全文的核心用法：过去分词表被动。这和我们之前遇到的 `was forgotten`, `damaged`, `undisturbed` 类似。同时，词缀 `re-` (再次) 也在后文的 `rebuilt` (重建) 中出现，可以一并记忆。"
+    },
+    {
+        "english": "By this time, a Lancaster bomber in reasonable condition was rare and worth rescuing.",
+        "chinese": "到了那个时候，状况良好的兰开斯特轰炸机实属罕见，值得抢救。",
+        "note": "1. 核心是 `...was rare and worth rescuing`，用 and 连接两个表语，同时描述了轰炸机的罕见性与价值。\n\n2. 重点短语 `worth + V-ing` 意为“值得做某事”。【关联点】`in reasonable condition` (状况良好) 与后文的 `in perfect condition` (状况完美) 形成对比，都用来描述物体的状态。"
+    },
+    {
+        "english": "The French authorities had the plane packaged and moved in parts back to France.",
+        "chinese": "法国政府让人把飞机包装起来，一部分一部分地搬回法国。",
+        "note": "1. 核心句型是 `have + 宾语 + 过去分词`，表示“让某事被做”。这里的 `packaged` 和 `moved` 就是过去分词，说明飞机“被”包装和“被”移动，强调当局是组织者而非执行者。\n\n2. 【关联点】这是全文最重要的句型之一。这和我们之后遇到的 `have the plane restored` (让飞机被修复) 和 `have...them rebuilt` (让它们被重建) 是完全相同的用法，可以一并掌握。"
+    },
+    {
+        "english": "Now a group of enthusiasts are going to have the plane restored.",
+        "chinese": "一群热心人计划修复这架飞机。",
+        "note": "1. 核心句型是 `have + 宾语 + 过去分词`。这里的 `have the plane restored` 意为“让飞机被修复”，强调爱好者们是组织者，而非亲自动手。\n\n2. 【关联点】此句型是全文重点。它与之前的 `had the plane packaged` 和之后的 `have...them rebuilt` 用法完全相同，都表示“让某事被做”，而非亲力亲为。"
+    },
+    {
+        "english": "It has four Rolls-Royce Merlin engines, but the group will need to have only three of them rebuilt.",
+        "chinese": "该飞机装装配有4台罗尔斯-罗伊斯的默林发动机，但是他们只需要修复其中的3台。",
+        "note": "1. 核心句型是 `have...rebuilt` (让它们被重建)，结构为 `have + 宾语 + 过去分词`。它强调团队将安排专业人士来修复发动机，而不是自己动手。\n\n2. 【关联点】这是全文第三次出现 `have sth done` 句型，与 `had the plane packaged` 和 `have the plane restored` 用法一致，是核心重点。同时，`rebuilt` 中的前缀 `re-` (再次) 也呼应了 `rediscovered`。"
+    },
+    {
+        "english": "Imagine their surprise and delight when they broke open the packing cases and found that the fourth engine was sweet as honey -- still in perfect condition.",
+        "chinese": "想一想他们所感受到的惊奇和兴奋 —— 当他们拆开包装箱时，他们发现第4台发动机就像蜂蜜一样甜 —— 发动机完好无损。",
+        "note": "1. 核心短语 sweet as honey (甜如蜜) 是一个生动的比喻，形容发动机状态极好。破折号后的 in perfect condition (完好无损) 是对其最直接的解释。\n\n2. 【关联点】in perfect condition (状况完美) 与我们之前遇到的 in reasonable condition (状况良好) 形成鲜明对比，都是描述物体状态的常用短语。"
+    },
+    {
+        "english": "A colony of bees had turned the engine into a hive and it was totally preserved in beeswax!",
+        "chinese": "一群蜜蜂把发动机当作了蜂房，发动机在蜂蜡中被完整地保存了下来。",
+        "note": "1. 核心是两个动作的对比：蜜蜂主动的 turn...into... (把...变成...)，和发动机被动的 was preserved (被保存)。\n\n2. 【关联点】preserved (被保存的) 是贯穿全文的核心用法：用过去分词表被动状态。这和我们之前遇到的 damaged, forgotten, rediscovered, packaged, restored 等用法完全一致。"
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "english": "The secretary told me that Mr Harms worth would see me.",
+        "chinese": "秘书告诉我说哈姆斯沃斯先生要见我。",
+        "note": "1. 核心句型是 `told sb that...` (告诉某人某事)，用一个完整的句子作宾语，来转述具体内容。【关联点】这和我们之后遇到的 `he said that...` 和 `He told me that...` 结构完全一样。注意 `tell` 后面常跟人(tell sb)，而 `say` 后面一般直接跟内容。\n\n2. `would` 是 `will` 的过去式，表示“过去将来”。因为主句动词 `told` 发生在过去，所以从句中表示“将要”的动作也相应地变为 `would`。"
+    },
+    {
+        "english": "I felt very nervous when I went into his office.",
+        "chinese": "我走进他的办公室，感到非常紧张。",
+        "note": "1. 核心是 `I felt nervous` (我感到紧张)，这是一个“主谓表”结构。系动词 `felt` (feel的过去式) 连接主语“我”和描述其状态的形容词 `nervous`。\n\n2. `when` 引导时间从句，表示“当……时”。【关联点】这和我们之前遇到的 `He did not look up... when I entered` 结构完全相同，都描述了两个同时发生的过去动作。并且，这里的 `went into` (进入) 与 `entered` 意思几乎一样。"
+    },
+    {
+        "english": "He did not look up from his desk when I entered.",
+        "chinese": "我进去的时候，他连头也没抬。",
+        "note": "1. 核心结构为 `... when ...`，表示“当……的时候”。它连接了两个同时发生在过去的动作：主句“他没抬头”和从句“我进去”。\n\n2. 动词 `enter` 意为“进入”。【关联点】这和我们之前遇到的 `I went into his office` 中的 `went into` 意思几乎一样，都是描述进入一个空间的动作。注意 `look up` 是“抬头”的意思。"
+    },
+    {
+        "english": "After I had sat down, he said that business was very bad.",
+        "chinese": "待我坐下后，他说生意非常不景气。",
+        "note": "1. 过去完成时 `had sat down` 强调“坐下”这个动作在主句“他说”之前已经完成，清晰地标示出两个过去动作的先后顺序。【关联点】这和我们遇到的 `Twenty people had already left` 及 `my turn had come` 用法一致，都表示一个更早发生的过去动作。\n\n2. 核心句型是 `he said that...`，用于转述别人的话。`that` 引导一个宾语从句，说明“说”的具体内容。【关联点】这和我们之前遇到的 `told me that...` 结构类似。注意 `say` 后面常直接跟内容，而 `tell` 后面常先跟听话的人 (tell sb)。"
+    },
+    {
+        "english": "He told me that the firm could not afford to pay such large salaries. Twenty people had already left.",
+        "chinese": "他还告诉我，公司支付不起这么庞大的工资开支，有20个人已经离去。",
+        "note": "1. 核心句型是 `told me that...`，用来转述他人的话，其中 `that` 引导一个完整的句子作为宾语。【关联点】这和我们之前遇到的 `The secretary told me that...` 和 `he said that...` 结构完全一样。\n\n2. 过去完成时 `had already left` 表示“离去”这个动作发生在主句“他告诉我”之前，强调了动作的先后顺序。【关联点】这和我们之前遇到的 `After I had sat down` 和 `my turn had come` 用法一致，都表示一个更早发生的过去动作。\n\n3. 核心词汇 `afford to do sth` 意为“负担得起做某事”，常与 `can/could not` 连用。`firm` 指公司，`salary` 指薪水。"
+    },
+    {
+        "english": "I knew that my turn had come.",
+        "chinese": "我知道这次该轮到我了。",
+        "note": "1. 核心句型是 `I knew that...`，用一个完整的句子作宾语，来表达“知道”的具体内容。【关联点】这和我们之前遇到的 `told me that...` 及 `said that...` 结构完全一样，都用于转述信息或想法。\n\n2. 过去完成时 `had come` 表示“轮到我”这个动作，发生在主句“我知道”之前，清晰地标示出两个过去动作的先后顺序。【关联点】这和我们遇到的 `After I had sat down` 及 `had already left` 用法一致。\n\n3. 核心词汇 `turn` 在此作名词，意为“轮次，机会”，常见搭配 `It's my turn.` (轮到我了。)。"
+    },
+    {
+        "english": "'Mr Harmsworth,' I said in a weak voice.",
+        "chinese": "“哈姆斯沃斯先生，”我无力地说。",
+        "note": "1. 核心短语 `in a weak voice` (用虚弱的声音) 是一个常用模式 `in a + 形容词 + voice`，用来生动地描述说话的方式。例如，“大声说”就是 `in a loud voice`。\n\n2. 【关联点】本句是直接引语，将说的话用引号直接引用。这和我们之后遇到的 `\"'Don't interrupt,' he Said.\"` 结构完全一样。注意区分我们之前学的 `he said that...` 这种间接引语，后者是转述，不加引号。"
+    },
+    {
+        "english": "'Don't interrupt,' he Said.",
+        "chinese": "“不要打断我的话，”他说。",
+        "note": "1. 本句是直接引语，结构为“引用内容”+“他说”。【关联点】这和我们之前遇到的`'Mr Harmsworth,' I said...`结构完全一样。注意区分转述内容的间接引语，如`he said that business was very bad`，后者不加引号。\n\n2. 引号内的`Don't interrupt`是祈使句，用“Don't + 动词原形”结构发出“不要做某事”的命令。核心词`interrupt`意为“打断，插话”。整句话是他直接命令对方“不要打断”。"
+    },
+    {
+        "english": "Then he smiled and told me I would receive an extra £100 a year!",
+        "chinese": "然后他微笑了一下告诉我说，我每年将得到1,000 英镑的额外收入。",
+        "note": "1. 核心句型是 `told me I would...`，这里省略了连词 `that`。【关联点】这和我们之前遇到的 `The secretary told me that...` 和 `He told me that...` 结构完全一样，都是转述信息。\n\n2. `would receive` 表示“过去将来时”。因为主句动词 `told` 是过去式，所以用 `would`。【关联点】这和我们遇到的 `...Mr Harmsworth would see me` 中的 `would` 用法一致。\n\n3. 核心词汇 `receive` 意为“收到”，比 `get` 更正式；`extra` 意为“额外的”。"
+    }
+]

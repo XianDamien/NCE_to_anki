@@ -1,0 +1,47 @@
+[
+    {
+        "english": "When you visit London,one of the first things you will see is Big Ben, the famous clock which can be heard all over the world on the B.B.C.",
+        "chinese": "当你游览伦敦时，首先看到的东西之一就是\"大笨钟\"，即那座从英国广播公司的广播中全世界都可以听到它的声音的著名大钟。",
+        "note": "1. 句子的主干是“你最先看到的东西之一是大笨钟”。`When...`交代时间，而`you will see`和`which...`是两个定语从句，分别用来修饰`things`和`clock`，让信息更具体。\n\n2. 【关联点】注意定语从句`which can be heard...`，这里的`which`指代事物（the clock）。这和我们之后遇到的`a painter who...`类似，`who`则指代人。它们都像一个标签，为名词提供额外信息。\n\n3. 【关联点】这里的被动语态`can be heard`（钟声是被听到的）强调动作的承受者。本课中被动语态很常见，如国会大厦“被烧毁”(`been burned down`)和“被建造”(`been erected`)。\n\n4. 这是一个经典的“主将从现”规则：在`When`引导的时间状语从句中，即便描述的是将来的事，从句动词也用一般现在时`visit`，而非`will visit`。"
+    },
+    {
+        "english": "If the Houses of Parliament had not been burned down in 1834, the great clock would never have been erected.",
+        "chinese": "如果不是国会大厦在1834年被焚毁的话，这座大钟永远也不会建造。",
+        "note": "1. 这是一个对过去事实的虚拟假设。核心结构为：If条件句用过去完成时(had not been...)，主句用 would have + 过去分词(...have been erected)。\n\n2. 动词短语`burn down`(烧毁)和动词`erect`(建造)都使用了被动语态，因为主语(国会大厦/大钟)是动作的承受者，而非发出者。\n\n3. 【关联点】这里的被动语态(`had not been burned down`, `have been erected`)与第一句中的`can be heard`一脉相承，都强调动作的承受者。\n\n4. 【关联点】注意动词的逻辑链：正因国会大厦`had been burned down`(被烧毁)，才有了之后新国会大厦`were being built`(正在被建造)的故事。"
+    },
+    {
+        "english": "Big Ben takes its name from Sir Benjamin Hall who was responsible for the making of the clock when the new Houses of Parliament were being built.",
+        "chinese": "\"大笨钟\"得名于本杰明.霍尔爵士，因为当建造新的国会大厦时，他负责建造大钟。",
+        "note": "1. 句子的主干是“大笨钟得名于霍尔爵士”。后面跟着两个从句：`who...`用来补充说明霍尔爵士的身份，而`when...`则交代了事件发生的时间背景。\n\n2. 掌握两个核心短语：`take its name from` (得名于) 和 `be responsible for` (对...负责)。它们是解释来源和责任的常用搭配。\n\n3. 【关联点】这里的定语从句 `who was responsible...` 用来修饰人(Sir Benjamin Hall)。这和我们之前遇到的 `which can be heard...` 类似，`which` 则用来修饰物(the clock)。\n\n4. 【关联点】时态 `were being built` (当时正在被建造) 是过去进行时的被动语态。它与前文的 `had been burned down` (被烧毁) 形成了时间线：正因旧国会大厦被烧毁，新国会大厦才“正在被建造”。"
+    },
+    {
+        "english": "It is not only of immense size, but is extremely accurate as well.",
+        "chinese": "此钟不仅外型巨大，而且走时也非常准确。",
+        "note": "1. 核心句型是 not only... but... as well (不仅...而且...)，用于并列介绍事物的两个特点。as well 位于句末，作用类似 also。\n\n2. 一个巧妙的用法是 of immense size，这里的 of + 名词 结构起到了形容词的作用，等同于 immense，表达“具有...特性的”。\n\n3. 【关联点】本句的 accurate (准确) 与后面的 Big Ben has rarely gone wrong (很少出错) 遥相呼应，共同强调大钟的可靠性。\n\n4. 【关联点】而 once... it failed... (有一次它失灵了) 则为这种“极端准确”提供了一个戏剧性的反例，使故事更生动。"
+    },
+    {
+        "english": "Officials from Greenwich Observatory have the clock checked twice a day.",
+        "chinese": "格林尼治天文台的官员们每天两次派人矫正此钟。",
+        "note": "1. 核心句型是 have + 宾语 + 过去分词 (have sth. done)，表示主语“安排”某事被完成，而非亲自动手。例如 I had my hair cut (我理发了)，强调是理发师剪的。\n\n2. 【关联点】此处的过去分词`checked`，与之前被动语态中的`heard`(被听到)、`burned down`(被烧毁)等类似，都表示宾语承受了一个被动的动作。\n\n3. 【关联点】官员们每天两次校对大钟，这个行为直接解释了为什么它`is extremely accurate`(极其准确)并且`has rarely gone wrong`(很少出错)。\n\n4. 这个句型非常实用。比如当你的电脑坏了，你会说 I need to have my computer fixed (我需要找人修电脑)，而不是 I need to fix my computer (除非你亲自修)。"
+    },
+    {
+        "english": "On the B.B.C. you can hear the clock when it is actually striking because microphones are connected to the clock tower.",
+        "chinese": "当大钟打点的时候，你可以从英国广播公司的广播中听到，因为钟塔上接了麦克风。",
+        "note": "1. 这个句子清晰地展示了“做什么-何时-为何”的逻辑链。主句`you can hear the clock`是核心，`when...`从句说明时间，`because...`从句解释原因。\n\n2. 【关联点】这里的被动语态`are connected`(麦克风是被连接的)延续了本课的主题。这和我们之前遇到的钟声`can be heard`(被听到)、国会大厦`been burned down`(被烧毁)等用法一致，都强调主语是动作的承受者。\n\n3. 【关联点】`because`直接解释了“能听到钟声”的技术原因。这与前文用虚拟语气揭示的“大钟被建造”的历史原因（国会大厦被烧毁）形成了有趣的对比，一个是直接原因，一个是根本原因。\n\n4. 【关联点】时间状语从句`when it is actually striking`，与开篇的`When you visit London...`结构类似，都是用`when`来引出事件发生的时间背景。"
+    },
+    {
+        "english": "Big Ben has rarely gone wrong.",
+        "chinese": "\"大笨钟\"很少出差错。",
+        "note": "1. 核心是现在完成时`has gone wrong`，强调“一直以来都如此”。`rarely`是表示频率的副词，意为“很少”；`go wrong`是固定短语，意为“出错，出故障”。\n\n2. 【关联点】这句话是对之前`is extremely accurate`(极其准确)的直接印证。正因为官员们每天`have the clock checked`(派人校对)，所以大笨钟才`rarely gone wrong`(很少出错)。\n\n3. 【关联点】注意`rarely`(很少)并不等于`never`(从不)。这句话为后面的转折`Once, however, it failed...`(然而有一次它失灵了)埋下伏笔，让故事更有戏剧性。\n\n4. 【关联点】注意区分`go wrong`(出错)和之后遇到的`fail to give the correct time`(未能给出正确时间)。前者描述一种状态的变坏，后者则更具体地指未能完成某个特定任务。"
+    },
+    {
+        "english": "Once, however, it failed to give the correct time.",
+        "chinese": "然而有一次，它却把时间报错。",
+        "note": "1. 核心短语是`fail to do sth.`，意为“未能做某事”，强调尝试了但未成功或根本没能做到。`however`是转折词，引出与前文相反的情况。\n\n2. 【关联点】这句话是前文`Big Ben has rarely gone wrong`(很少出错)的戏剧性转折。`rarely`暗示了有例外，而`Once, however...`就揭示了这个唯一的例外，使故事更吸引人。\n\n3. 【关联点】注意区分`fail to give the correct time`与`go wrong`。前者具体指“未能报准时间”这一特定失败，而后者泛指“出故障”。这里的表达更精确。\n\n4. 【关联点】这句话提出了一个悬念：大钟为何会失灵？这为下一句揭示原因——`A painter...slowed it down!`(一位油漆工把它弄慢了)——做好了铺垫。"
+    },
+    {
+        "english": "A painter who had been working on the tower hung a pot of paint on one of the hands and slowed it down!",
+        "chinese": "在钟塔上干活的一位油漆工把一只油漆桶挂在了一根指针上，把钟弄慢了！",
+        "note": "1. 这句话揭晓了前文的悬念：大钟失灵并非机械故障，而是一个意外。主句由`and`连接两个并列的过去时动作：`hung`(挂)和`slowed down`(弄慢)，清晰地描述了事件的经过和结果。\n\n2. 【关联点】定语从句`who had been working...`用来修饰人(painter)。这和我们之前遇到的`which can be heard...`修饰物(clock)的用法类似，都是为名词提供背景信息，明确所指对象。\n\n3. 【关联点】过去完成进行时`had been working`，表示“挂油漆桶”这个动作发生前，“油漆工一直在工作”。它为主要事件提供了背景，这与之前用`had been burned down`交代历史背景的叙事手法相似。\n\n4. 核心短语`slow down`(弄慢)和词汇`hand`(钟的指针)都十分形象。注意`slowed it down`的语序，当宾语是代词(it, him, them等)时，必须放在动词和副词中间。"
+    }
+]

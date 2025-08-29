@@ -1,0 +1,27 @@
+[
+    {
+        "english": "Boxing matches were very popular in England two hundred years ago.",
+        "chinese": "两百年前，拳击比赛在英国非常盛行。",
+        "note": "1. 这是一个典型的主谓表句型(S+V+P)，用于描述主语“拳击比赛”在过去的状态。核心结构是“某物/某人是怎样的”，由系动词`were`连接主语和表语`popular`。\n\n2. 关键时间状语是`two hundred years ago` (两百年前)。`ago`这个词是明确的信号，表示动作或状态发生在过去的某个时间点，句子必须使用一般过去时。\n\n3. 【关联点】这和我们之后遇到的`In those days` (在那些日子里) 类似，都用来设定故事的过去背景。同时，本句的“主谓表”结构，在后文描述拳击“很野蛮”(`boxing was very crude`)以及介绍人物(`One... was Daniel Mendoza`)时，也反复出现。"
+    },
+    {
+        "english": "In those days, boxers fought with bare fists for prize money.",
+        "chinese": "当时，拳击手们不戴手套，为争夺奖金而搏斗。",
+        "note": "1. 这是一个简洁的主谓(S+V)句型，核心是`boxers fought`。句子其余部分清晰地补充了搏斗的方式(`with bare fists` 赤手空拳)和目的(`for prize money` 为了奖金)。\n\n2. 【关联点】搏斗的目的`for prize money`，直接解释了下一句他们被称为`prizefighters`(职业拳击手)的原因。`prize`这个词是连接两句的关键。\n\n3. 【关联点】句首的`In those days`(当时)和我们之前遇到的`two hundred years ago`作用类似，都是用来设定故事的过去背景，引出后续描述。"
+    },
+    {
+        "english": "Because of this, they were known as 'prizefighters'.",
+        "chinese": "因此，他们被称作“职业拳击手”。",
+        "note": "1. `Because of this` (因此) 紧承上一句，清晰地引出结果。它直接解释了为什么那些为奖金(`prize money`)而战的人，会被称为`prizefighters`。\n\n2. `were known as` (被称为) 是被动语态，强调他们“被”别人这样称呼。【关联点】这和我们之后遇到的`could be injured`(可能受伤)和`was born`(出生)类似，都是被动语态，表示主语承受动作。\n\n3. 【关联点】注意区分表示原因的`Because of this`和`for`。`Because of this`常放句首引出结果；而`for`是连词，置于两个分句间解释前因。"
+    },
+    {
+        "english": "However, boxing was very crude, for these were no rules and a prizefighter could be seriously injured or even killed during a match.",
+        "chinese": "不过，拳击是十分野蛮的，因为当时没有任何比赛规则，职业拳击手有可能在比赛中受重伤，甚至丧命。",
+        "note": "1. 句子的核心是`boxing was very crude`。 【关联点】这和我们开篇遇到的`Boxing matches were very popular`是同一个主谓表句型，都用来描述主语的状态。`However`一词清晰地引出了与`popular`的转折对比。\n\n2. 连词`for`在此处意为“因为”，引出两个并列的原因：没有规则和拳手可能伤亡。 【关联点】注意区分`for`和我们之前遇到的`Because of this`。`for`用于句中解释前因，而`Because of this`常用于句首引出结果。\n\n3. `could be injured or even killed` (可能被伤害或杀死)是“情态动词+被动语态”结构，表示一种可能性。 【关联点】这和我们之前遇到的`were known as`(被称为)以及之后将遇到的`was born`(出生)一样，都是被动语态，强调主语承受了某个动作。"
+    },
+    {
+        "english": "One of the most colourful figures in boxing history was Daniel Mendoza, who was born in 1764.",
+        "chinese": "拳击史上最引人注目的人物之一是丹尼尔.门多萨，他生于1764年。",
+        "note": "1. 句子的核心是`One... was Daniel Mendoza`，这是一个主谓表句型。【关联点】这和我们开篇遇到的`Boxing matches were popular`是同一个句型，都用来介绍主语的身份或状态。\n\n2. `One of the most...`是常用结构，意为“最…之一”。`colourful`在此处指“引人注目的，有趣的”，而非颜色多。\n\n3. `who was born in 1764`是定语从句，补充说明Mendoza的信息。`was born`是被动语态。【关联点】这和我们之前遇到的`were known as`(被称为)和`could be injured`(可能受伤)一样，都是被动语态，强调主语承受动作。"
+    }
+]

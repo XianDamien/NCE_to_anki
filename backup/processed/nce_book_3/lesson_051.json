@@ -1,0 +1,102 @@
+[
+    {
+        "english": "Predicting the future is notoriously difficult.",
+        "chinese": "众所周知，预测未来是非常困难的。",
+        "note": "1. Predicting是动词predict加ing，变为动名词，指“预测这件事”，在句中作主语。notoriously是副词，意为“众所周知地”，常带负面含义，用来强调困难是公认的，而非个人观点。\n\n2. 句型为“主谓表”结构：[Predicting the future]作主语，[is]是系动词，[notoriously difficult]作表语。核心用法是“动名词短语作主语”，即“做某事”是“怎么样的”。例如：Learning English is interesting.\n\n3. 【关联点】本课主题是预测未来，所以predict这个词会反复出现。例如后面会学到“an Englishman... was able to predict...”，以及它的同义词foresaw (预见)。通过对比，可以加深对这类词汇的理解。"
+    },
+    {
+        "english": "Who could have imagined, in the mid 1970s, for example, that by the end of the 20th century, computers would be as common in people's homes as TV sets?",
+        "chinese": "举个例子吧，在20世纪70年代中叶又有谁能想得到在20世纪末的时候，家庭用的计算机会像电视机一样普遍？",
+        "note": "1. \"Who could have imagined...?\" 是一个反问句，意为“当时没人能想到”。\"could have + 过去分词\" 用于对过去可能性的推测。从句中的 \"would be\" 表示从过去（1970年代）的视角看未来。\n\n2. 【关联点】注意 \"could have imagined\" 的用法，这和我们之后遇到的否定推测 \"could not have foreseen\" (不可能预见到) 结构类似。同时，\"would be\" 的用法也与 Bagrit 预言时用的 \"computers would be small enough\" 完全一致。\n\n3. 【关联点】词汇 common (普遍的) 在本课中层层递进：从 \"common enough\" (在特定领域)，到本句的 \"as common as TV sets\" (进入家庭)，再到 \"in common use\" (当今普及)，清晰展现了科技发展。"
+    },
+    {
+        "english": "In the 1970s, computers were common enough, but only in big business, government departments, and large organizations. These were the so-called mainframe machines.",
+        "chinese": "在70年代，计算机已经相当普及了，但只用在大公司，政府部门和大的组织之中，它们被称为主机。",
+        "note": "1. 词组：common enough表示“足够普及”，但but only限定了范围。so-called意为“所谓的”，引出事物名称。enough置于形容词后。\n\n2. 【关联点】这和我们之前遇到的“as common as TV sets”及之后将学到的“in common use”和commonplace (司空见惯的) 形成对比，清晰地展示了计算机普及程度的演变。\n\n3. 【关联点】注意，本句引出了mainframe(主机)这一概念，紧接着的句子将对其展开描述。同时，common enough的用法与后文的small enough结构一致。"
+    },
+    {
+        "english": "Mainframe computers were very large indeed, often occupying whole air-conditioned rooms, employing full-time technicians and run on specially-written software.",
+        "chinese": "计算机主机确实很大，常常占据了装有空调的多间房间，雇用专职的技师，而且得用专门编写的软件才能运行。",
+        "note": "1. 本句核心结构为“主谓表 + 三个并列的补充说明”。注意这三个补充说明的形式：occupying和employing用-ing形式表主动，而run用过去分词表被动（被运行）。这种结构高效地添加了细节。\n\n2. 【关联点】本句紧接上一句的“so-called mainframe machines”，具体描述了大型主机的三大特点：占地大、需专人维护、软件特殊。这为后文描述个人电脑的“小而强”埋下伏笔。\n\n3. 【关联点】短语run on (依靠...运行) 在后文描述IBM个人电脑时会再次出现：“This ran on an 'operating system' called DOS...”。注意对比，一个是过去分词作定语，一个是主动的过去式。"
+    },
+    {
+        "english": "Though these large machines still exist, many of their functions have been taken over by small powerful personal computers, commonly known as PCs.",
+        "chinese": "虽然这种大计算机仍然存在，但它们的许多功能已被体积小但功能齐全的个人电脑——即我们常说的PC机——所代替了。",
+        "note": "1. Though引导让步从句，引出对比。核心动词短语take over (取代) 以被动语态have been taken over出现，强调“功能”被取代。commonly known as (通常被称为) 用于引出事物的简称或别名，如PC。\n\n2. 【关联点】本句是全文的转折点，承接前文对大型主机(mainframe)的描述，通过“取代”(take over)这一动作，引出下文的个人电脑(PC)时代，展现了技术的更新换代。\n\n3. 【关联点】注意介绍名称的几种方式：so-called, a machine called..., 以及本句的commonly known as...。它们功能相似，都用于引出事物的名称或别称，但语气略有不同。"
+    },
+    {
+        "english": "In 1975, a primitive machine called the Altair, was launched in the USA.",
+        "chinese": "1975年，美国推出了一台被称为“牛郎星”的原始机型。",
+        "note": "1. 核心结构为被动语态“a machine... was launched”，强调机器是“被”推出的。词组“called the Altair”用过去分词作定语，简洁地为机器命名。\n\n2. 【关联点】注意为事物命名的方式。这和我们之后遇到的“so-called mainframe machines”、“a machine called an Apple”以及“commonly known as PCs”用法类似，都是给事物贴上名称标签。\n\n3. 【关联点】这里的primitive (原始的) 与后文的small, powerful, user-friendly形成鲜明对比，开启了全文计算机从“原始”到“先进”的演变历程。"
+    },
+    {
+        "english": "It can properly be described as the first 'home computer' and it pointed the way to the future.",
+        "chinese": "严格地说起来，它可以被称为第一台“家用电脑”，而且它也指了今后的方向。",
+        "note": "1. 核心短语：be described as (被描述为)，是被动语态，用于给事物下定义或命名。properly (准确地) 强调了定义的精确性。\n\n2. 【关联点】短语 point the way to (为...指明方向) 生动地表达了“预示未来”。这和我们之前遇到的 predict (预测) 和 foresee (预见) 意思相近，都与本课“预测”的主题紧密相关。\n\n3. 【关联点】注意本文中多种“命名”或“称呼”的表达：so-called, commonly known as, a machine called... 以及本句的 be described as。它们功能相似，可以对比学习。"
+    },
+    {
+        "english": "This was followed, at the end of the 1970s, by a machine called an Apple.",
+        "chinese": "70年代末，在牛郎星之后又出现了一种被称为“苹果”的机型。",
+        "note": "1. 核心句型 A was followed by B，意为“B紧随A之后出现”。这是一种被动语态，优雅地描述了事件的先后顺序。句中的This指代前文的牛郎星电脑。\n\n2. 词组“called an Apple”意为“被称为苹果的”。这里的called是过去分词作定语，像形容词一样修饰前面的名词machine，是一种简洁的命名方式。\n\n3. 【关联点】为事物命名的方式。这和我们之前遇到的“a primitive machine called the Altair”用法完全一致。注意对比本文中其他命名方式，如so-called (所谓的) 和 commonly known as (通常被称为)。"
+    },
+    {
+        "english": "In the early 1980s, the computer giant, IBM produced the world's first Personal Computer.",
+        "chinese": "80年代初，计算机行业的王牌公司美国国际商用机器公司（IBM）生产出了世界上第一台个人电脑。",
+        "note": "1. 核心结构为“主谓宾”。注意主语“the computer giant, IBM”的表达方式，“the computer giant”是IBM的同位语，即补充说明，点明了IBM在当时的行业地位。\n\n2. 【关联点】这和我们之后遇到的“a then small company named Microsoft”（当时还是一家叫微软的小公司）形成鲜明对比，生动展现了科技行业巨头的变迁。\n\n3. 【关联点】这里的produced是主动语态的动词。注意区分之后遇到的“produced by... Microsoft”，那里的produced是过去分词作定语，表示“被生产的”，用法不同。"
+    },
+    {
+        "english": "This ran on an 'operating system' called DOS, produced by a then small company named Microsoft.",
+        "chinese": "这种电脑采用了一种被称为磁盘操作系统（DOS）的工作程序，而这种程序是由当时规模不大的微软公司生产的。",
+        "note": "1. 核心短语ran on意为“运行于”。本句结构极为高效：主句后连接两个过去分词短语(called...和produced by...)作后置定语，紧凑地补充了操作系统名称和来源。then在此处作形容词，意为“当时的”。\n\n2. 【关联点】这和我们之前遇到的主机“run on specially-written software”用法类似。但注意，这里的ran是主动的过去式动词，而之前的run是被动语态中的过去分词，形式不同。\n\n3. 【关联点】注意区分produced by的用法。前文“IBM produced...”是主动语态，produced是谓语动词；这里的produced by...是过去分词短语作定语，修饰system，表示“被生产的”。\n\n4. 【关联点】“a then small company named Microsoft”与前文的“the computer giant, IBM”形成强烈对比，生动展现了科技行业巨头的变迁。同时，named Microsoft的用法也与called DOS类似。"
+    },
+    {
+        "english": "The IBM Personal Computer was widely copied.",
+        "chinese": "IBM的个人电脑被大规模地模仿。",
+        "note": "1. 核心句型为被动语态“主语 + was + 过去分词”，表示主语“被”做了某事。副词widely (广泛地) 用来修饰动词，强调模仿的规模之大。\n\n2. 【关联点】本句紧接上文“IBM produced the... Personal Computer”，说明了其后续影响。注意被动语态“was copied”，这和我们之前遇到的“was launched”、“was followed by”以及之后将学到的“would be used”结构完全一致，都是强调主语“被”怎么样了。"
+    },
+    {
+        "english": "From those humble beginnings, we have seen the development of the user-friendly home computers and multimedia machines which are in common use today.",
+        "chinese": "从那些简陋的初级阶段，我们看到了现在都已普及的、使用简便的家用电脑和多媒体的微机的发展。",
+        "note": "1. 核心词组：humble beginnings (简陋的开端) 与 user-friendly (用户友好的) 形成鲜明对比，展现了从原始到先进的发展。\n\n2. 句末的which are in common use today是定语从句，修饰前面的电脑。 【关联点】这和我们之后遇到的...which we know today用法一致，都是给名词“贴标签”补充说明。\n\n3. 【关联点】注意common一词的演变：从仅在特定领域common enough，到进入家庭as common as TV sets，再到本句的in common use，清晰地展现了科技的普及过程。"
+    },
+    {
+        "english": "Considering how recent these developments are, it is even more remarkable that as long ago as the 1960s, an Englishman, Leon Bagrit, was able to predict some of the uses of computers which we know today.",
+        "chinese": "想一想这些发展的时间多么短，就更觉得英国人莱昂.巴格瑞特有着非凡的能力。他在60年代就能预言我们今天知道的计算机的一些用途。",
+        "note": "1. 核心结构是 it is remarkable that...，it是形式主语，真正的主语是that引导的长句。这种结构常用于强调情感或评价。\n\n2. 句首的Considering...意为‘考虑到’，引出背景，让后面的‘了不起’(remarkable)更有说服力。\n\n3. 【关联点】动词predict (预言) 与本课开头的Predicting the future...形成呼应，是全文的核心词汇之一。\n\n4. 【关联点】形容词remarkable (非凡的) 在文末再次出现，首尾呼应，强调了Bagrit预测的伟大。\n\n5. 【关联点】定语从句which we know today，与之前遇到的...which are in common use today用法一致，都是为名词添加补充信息。"
+    },
+    {
+        "english": "Bagrit dismissed the idea that computers would learn to 'think' for themselves and would 'rule the world', which people liked to believe in those days.",
+        "chinese": "巴格瑞特根本不接受计算机可以学会自己去“思考”和计算可以“统治世界”这种想法，而这种想法是当时的人们都愿意相信的。",
+        "note": "1. 核心短语：dismiss the idea that... 意为“不接受...这种想法”。that引导同位语从句，用一个完整的句子来具体解释idea的内容。\n\n2. 句末的which引导非限制性定语从句，补充说明前面整个“计算机统治世界”的想法。【关联点】注意区分：这和我们之前遇到的“...uses which we know today”不同，后者是限制性定语从句，用于限定名词。\n\n3. 【关联点】句中的would learn/would rule表示从过去视角看待未来的可能性。这和我们之前遇到的“computers would be as common...”用法一致，都是过去将来时，描述当时人们的设想。\n\n4. 【关联点】本句的dismiss (否定) 与前文Bagrit的predict (预测) 和foresaw (预见) 形成对比。他否定了科幻式的想法，却预见到了许多实用的功能，凸显其远见。"
+    },
+    {
+        "english": "Bagrit foresaw a time when computers would be small enough to hold in the hand, when they would be capable of providing information about traffic jams and suggesting alternative routes, when they would be used in hospitals to help doctors to diagnose illnesses, when they would relieve office workers and accountants of dull, repetitive clerical work.",
+        "chinese": "巴格瑞特预示有一天计算机可以小到拿在手上，计算机可以使办公室人员和会计免除那些枯燥、重复的劳动。",
+        "note": "1. 本句核心是“Bagrit foresaw a time”，其后跟了四个并列的when定语从句，像四个小故事一样，具体描绘了那个“未来时刻”的景象。\n\n2. 【关联点】foresaw (预见) 与本课核心词predict (预测) 意思相近，都指预知未来。注意foresaw是动词，而之前遇到的Predicting是动名词作主语。\n\n3. 【关联点】句中多次出现的would表示从过去看未来(过去将来时)。这和我们之前遇到的“computers would be as common...”以及“computers would learn to think”用法完全一致，是本文描述过去预测时的标志性时态。\n\n4. 【关联点】结构“small enough”(足够小)与之前遇到的“common enough”(足够普遍)结构一致，都是将enough置于形容词之后。\n\n5. 【关联点】从句中的“would be used”(将被使用)是被动语态。这和我们之前遇到的was launched, was copied等用法类似，都强调主语“被”怎么样了。\n\n6. 核心短语relieve...of...意为“使...免除...”，生动地表达了计算机解放人类劳动力的作用。"
+    },
+    {
+        "english": "All these computer uses have become commonplace.",
+        "chinese": "计算机的所有这些功能现在都变得很平常。",
+        "note": "1. 核心结构为“主语 + have become + 形容词”，表示主语的状态发生了变化，现已“变得...”如何。commonplace意为“司空见惯的”，是状态的最终结果。\n\n2. 【关联点】注意commonplace这个词。它标志着本课中“普及”概念的最终阶段。回顾全文，计算机的普及经历了从特定领域的common enough，到进入家庭的as common as TV sets，再到如今的in common use，最终达到了commonplace的程度，层次感非常清晰。\n\n3. 【关联点】句型have become + 形容词，在文末总结计算机发展时再次出现：“Computers have become smaller and smaller...”。两者结构完全相同，都用现在完成时总结了从过去到现在的巨大变化。"
+    },
+    {
+        "english": "Of course, Leon Bagrit could not possibly have foreseen the development of the Internet, the worldwide system that enables us to communicate instantly with anyone in any part of the world by using computers linked to telephone networks.",
+        "chinese": "当然了，莱昂.巴格瑞特根本没有可能预测到国际交互网——就是把计算机连结到电话线路上，以便和世界上任何一个地方的人立即进行联系的一个世界范围的通讯系统——的发展。",
+        "note": "1. 核心句型“could not possibly have foreseen”表示对过去的强烈否定推测，意为“（当时）根本不可能预见到”。【关联点】这和我们之前遇到的反问句“Who could have imagined...?”结构类似，都是对过去可能性的推测，一个否定，一个疑问。\n\n2. 逗号后的“the worldwide system...”是the Internet的同位语，即一个长长的“定义式”补充说明，其后that引导的定语从句具体解释了它的功能。\n\n3. 核心短语：enable sb to do sth (使某人能做某事)。computers linked to...中的linked是过去分词作定语。【关联点】这种用法和我们之前遇到的a machine called...和an operating system produced by...完全一致，都是用过去分词给名词添加信息。"
+    },
+    {
+        "english": "Nor could he have foreseen how we could use the Internet to obtain information on every known subject, so we can read it on a screen in our homes and even print it as well if we want to.",
+        "chinese": "他也无法预测到我们可以利用国际交互网获取有关任何已知专题的信息，以便在家里的屏幕上阅读，如果愿意的话甚至可以将其打印出来。",
+        "note": "1. 句首的Nor表示“也不”，它会引发倒装，即将助动词could提到主语he之前。这是英语中表示“前者否定，后者也否定”的正式用法。\n\n2. 【关联点】核心句型“could he have foreseen”表示对过去的推测。这和我们之前遇到的“Who could have imagined...?”以及“could not possibly have foreseen...”结构完全一致，都是在探讨过去的可能性，只是一个是疑问，一个是否定。\n\n3. 【关联点】动词foresee (预见) 是本课核心词predict (预测) 的近义词。注意区分本文中出现的不同形式：动名词Predicting，动词predict，以及foresee的过去式foresaw和过去分词foreseen。\n\n4. 【关联点】本句紧接上一句“未能预见到互联网的发展”，具体阐述了他未能预见到的内容：我们如何利用网络获取信息、阅读甚至打印。这让“未能预见”这个概念变得更加具体。"
+    },
+    {
+        "english": "Computers have become smaller and smaller, more and more powerful and cheaper and cheaper. This is what makes Leon Bagrit's predictions particularly remarkable.",
+        "chinese": "计算机已经变得体积越来越小，功能越来越多，价格越来越低，这就是莱昂.巴格瑞特的预测非凡的地方。",
+        "note": "1. 核心结构为“形容词比较级 + and + 形容词比较级”，如smaller and smaller，生动描绘了持续渐进的变化。现在完成时(have become)则强调这一变化是从过去延续至今的结果。\n\n2. This指代前一句的全部内容，是本句主语。what引导的从句作表语，解释“This”是什么，即“使预测非凡的原因”。what在此处可理解为“the thing that”。\n\n3. 【关联点】句型“have become + 形容词”和我们之前遇到的“All these computer uses have become commonplace”结构完全相同，都用现在完成时总结了从过去到现在的巨大变化。\n\n4. 【关联点】形容词remarkable (非凡的) 在这里与前文的“it is even more remarkable that...”遥相呼应，共同强调了Bagrit预测的惊人准确性，是全文的点睛之笔。"
+    },
+    {
+        "english": "If he, or someone like him, were alive today, he might be able to tell us what to expect in the next fifty years.",
+        "chinese": "如果他或是像他的什么人今天还活着的话，他大概可以告诉我们下一个50年后会发生什么事情。",
+        "note": "1. 核心为与现在事实相反的虚拟语气。If从句中，不论主语是谁，be动词都用were，表示“假如...”，主句常用might/would/could。这表明“他”现在并不在世，纯属假设。\n\n2. 【关联点】短语what to expect (期待什么) 作宾语。这里的expect (预料) 与本课核心词predict (预测) 和foresaw (预见) 意思相近，都与“预测未来”的主题相关。\n\n3. 【关联点】注意might be able to tell (大概能告诉)的用法。这和我们之前遇到的 an Englishman... was able to predict (能够预言) 结构类似，都是用be able to表达“有能力做某事”。"
+    }
+]
